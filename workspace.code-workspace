@@ -1,0 +1,60 @@
+{
+	"folders": [
+		{
+			"name": "PrimeiroProjeto",
+			"path": "..\\PrimeiroProjeto"
+		},
+		{
+			"name": "IntroProg",
+			"path": "..\\IntroProg"
+		},
+		{
+			"name": "SensorDeToque",
+			"path": "..\\SensorDeToque"
+		},
+		{
+			"name": "IoT-Exemplo1",
+			"path": "..\\..\\..\\..\\Ambiente de Trabalho\\lab-aberto-intro-esp32-main\\lab-aberto-intro-esp32-main\\IoT-Exemplo1"
+		},
+		{
+			"name": "T_EX01-Create-Task",
+			"path": "..\\T_EX01-Create-Task"
+		},
+		{
+			"name": "T_EX02-DELETE-TASK",
+			"path": "..\\T_EX02-DELETE-TASK"
+		},
+		{
+			"name": "T_EX02-Suspend-Resume-Task",
+			"path": "..\\T_EX02-Suspend-Resume-Task"
+		},
+		{
+			"name": "T_EX04-Parameters",
+			"path": "..\\T_EX04-Parameters"
+		},
+		{
+			"name": "T_EX05-Core-S",
+			"path": "..\\T_EX05-Core-S"
+		},
+		{
+			"name": "T_EX06-Stack-Usage",
+			"path": "..\\T_EX06-Stack-Usage"
+		},
+		{
+			"name": "T_EX07-Queue",
+			"path": "..\\T_EX07-Queue"
+		},
+		{
+			"name": "Projeto final",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.yaml": "home-assistant",
+			"cstddef": "cpp",
+			"functional": "cpp",
+			"type_traits": "cpp"
+		}
+	}
+}
