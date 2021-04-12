@@ -25,7 +25,7 @@ QueueHandle_t xQueue;
 #define SERIAL_BAUDRATE 9600
 
 //mqttServer
-#define MQTTSERVER "192.168.1.2"
+#define MQTTSERVER "192.168.69.222"
 #define MQTTSERVERPORT 1883
 
 #define DEVICE_1 "Sonar"
@@ -157,9 +157,9 @@ void vTaskPublish(void *pvParameters)
     }
   });
 
-  WiFiClient espClient;                             //Acesso a Interface WiFi
-  PubSubClient mqttClient(espClient);               //Criação do cliente MQTT
-  mqttClient.setServer(MQTTSERVER, MQTTSERVERPORT); // COnfiguração do Servidor
+  WiFiClient espClient;                             // WiFi Interface
+  PubSubClient mqttClient(espClient);               // client MQTT
+  mqttClient.setServer(MQTTSERVER, MQTTSERVERPORT); // Server Config in credencial.h
 
   MySensor sensor;
 
@@ -192,7 +192,10 @@ void vTaskPublish(void *pvParameters)
       //Touch do aReset and Off Relay_1 for some time
       if (sensor.touch < MINSENCIBILITY)
       {
-        fauxmo.setState("SensorAvo", true, 1);
+
+        //TODO: test Alexa with group to syncronize relay and an other IOt devise
+        //try to turn off on a Iot Devise recognised by Alexa
+        fauxmo.setState("GetOutOfBedSensor", true, 1);
       }
 
       if (sensor.distance < MAXDISTANCE && sensor.distance > MINDISTANCE)
